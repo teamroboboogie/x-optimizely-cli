@@ -1,12 +1,15 @@
 {
-  "name": "x-optimizely-cli",
-  "version": "0.1.0",
+  "name": "@teamroboboogie/x-optimizely-cli",
+  "version": "0.1.2",
   "description": "A command line application to create/update Optimizely X experiments via the API",
   "main": "index.js",
   "bin": {
     "xoptcli": "bin/xoptcli.js"
   },
-  "repository": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/teamroboboogie/x-optimizely-cli.git"
+  },
   "keywords": [
     "optimizely x",
     "optimizely",
@@ -17,7 +20,7 @@
     "Darius Capizzi",
     "Jeremy Sell"
   ],
-  "license": "Apache 2.0",
+  "license": "Apache-2.0",
   "dependencies": {
     "@teamroboboogie/tabtab-commander": "^0.1.0",
     "bluebird": "^2.3.2",
@@ -40,5 +43,12 @@
     "intercept-stdout": "^0.1.1",
     "path": "^0.12.7",
     "quick-temp": "^0.1.2"
-  }
+  },
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "xoptcli"
+  },
+  "homepage": "https://bitbucket.org/DariusCapizzi/x-optimizely-cli#readme"
 }
