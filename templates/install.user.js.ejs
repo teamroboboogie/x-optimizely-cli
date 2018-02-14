@@ -1,0 +1,20 @@
+// ==UserScript==
+// @name         Optimizely-X-CLI Injection Script
+// @author       Web Marketing ROI
+// @homepage     https://github.com/webmarketingroi/optimizely-x-cli
+// @source       https://github.com/webmarketingroi/optimizely-x-cli
+// @namespace    optxcli
+// @description  Inject local experiment JS / CSS into a Chrome page for development
+// @include      /xoptcli=activate/
+// @require      http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.js
+// ==/UserScript==
+
+var scriptElement = document.createElement('script');
+scriptElement.type = 'text/javascript';
+scriptElement.src =  '//<%- _host %>:<%- _port %>/variation.js';
+document.head.appendChild(scriptElement);
+
+var stylesheet = document.createElement('link');
+stylesheet.rel = 'stylesheet';
+stylesheet.href = '//<%- _host %>:<%- _port %>/variation.css';
+document.head.appendChild(stylesheet);

@@ -1,0 +1,13 @@
+# macOS
+.DS_Store
+
+# Log Files
+*.log
+
+# Node
+node_modules/
+.npmrc
+
+tmp/
+coverage/
+.coveralls.yml

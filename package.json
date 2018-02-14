@@ -1,0 +1,44 @@
+{
+  "name": "x-optimizely-cli",
+  "version": "0.1.0",
+  "description": "A command line application to create/update Optimizely X experiments via the API",
+  "main": "index.js",
+  "bin": {
+    "xoptcli": "bin/xoptcli.js"
+  },
+  "repository": "",
+  "keywords": [
+    "optimizely x",
+    "optimizely",
+    "cli"
+  ],
+  "author": "roboboogie",
+  "contributors": [
+    "Darius Capizzi",
+    "Jeremy Sell"
+  ],
+  "license": "Apache 2.0",
+  "dependencies": {
+    "@teamroboboogie/tabtab-commander": "^0.1.0",
+    "bluebird": "^2.3.2",
+    "cli-table": "^0.3.1",
+    "commander": "^2.5.0",
+    "ejs": "",
+    "express": "^4.10.4",
+    "glob": "^4.2.2",
+    "lodash": "^2.4.1",
+    "open": "0.0.5",
+    "optimizely-x-node-client": "",
+    "promptly": "^0.2.0",
+    "q": "^1.1.2"
+  },
+  "engines": {
+    "node": "^0.10.32"
+  },
+  "devDependencies": {
+    "coveralls": "^2.11.2",
+    "intercept-stdout": "^0.1.1",
+    "path": "^0.12.7",
+    "quick-temp": "^0.1.2"
+  }
+}
