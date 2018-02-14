@@ -16,7 +16,7 @@ You'll need to have node.js installed locally to run `xoptcli`. To view variatio
 #### Installation
 This will install x-optimizely-cli on your system and give you access to the `xoptcli` executable globally.
 ```
-npm install -g x-optimizely-cli
+npm i -g @teamroboboogie/x-optimizely-cli
 ```
 
 #### Setting up your testing directory:
