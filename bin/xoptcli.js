@@ -53,11 +53,6 @@ program
   .option("-m --metrics", "build with metrics")
   .action(loadCommand("pull-pages"));
 
-// program
-//   .command("pull-experiment <file> <page_id>")
-//   .description("pulls specific experiment to file")
-//   .action(loadCommand("pull-experiment"));
-
 program
   .command("push-experiment <path>")
   .description("Push an experiment to Optimizely X")
@@ -72,6 +67,11 @@ program
   .command("variation <experiment> <folder> <name> <traffic_allocation>")
   .description("Create Local Variation")
   .action(loadCommand("create-variation"));
+
+program
+    .command("pull-experiment <file> <experiment_id>")
+    .description("pulls specific experiment to file")
+    .action(loadCommand("pull-experiment"));
 
 //Show help if no arguments are passed
 if (!process.argv.slice(2).length) {

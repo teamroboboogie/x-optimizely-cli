@@ -31,7 +31,7 @@
     "glob": "^4.2.2",
     "lodash": "^2.4.1",
     "open": "0.0.5",
-    "optimizely-x-node-client": "",
+    "optimizely-x-node-client": "https://github.com/teamroboboogie/optimizely-x-node",
     "promptly": "^0.2.0",
     "q": "^1.1.2"
   },
