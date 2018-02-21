@@ -33,7 +33,7 @@ Lets you view available commands.
 xoptcli or xoptcli -h, -help
 ```
 - Options:
-  - `-h, -help` - view available commands
+  - `-h, --help` - view available commands
 <br>
 
 #### Set Token for API calls
@@ -100,13 +100,16 @@ xoptcli push-experiment <path>
   - Sample Call: `xoptcli push-experiment roboboogie-test/`
 <br>
 
+<!-- darius -->
+On create, will assign a default metric "Overall Revenue", because it is required by the API.
+
 #### Pull all pages for a project
 Pulls all pages for a project into a single json file. This is mostly for reference.
 ```
 xoptcli pull-pages [options] <file>
 ```
 - Options:
-  - -m – Pull all metrics with pages.
+  - `-m, --metrics` – Pull all metrics with pages.
 - Arguments:
   - `<file>` - name of file where you want to store the json dump. Required.
     - Type: string. Example: "pages.json"
@@ -148,6 +151,9 @@ xoptcli pull-experiment <folder> <experiment_id>
     - Type: integer. Example: 11124913096
   - Sample Call: `xoptcli pull-experiment "my-great-experiment" 11124913096`
 <br>
+
+<!-- darius -->
+If a remote variation doesn't exist locally, a folder will be created for it. Defaulting to something like "variation-1", depending on the index on the remote. eg, a variation in the first slot within optimizely gui will always be named "original in a local variation"
 
 ---
 
