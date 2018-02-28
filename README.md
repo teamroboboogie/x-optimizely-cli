@@ -90,7 +90,7 @@ xoptcli variation <experiment> <folder> <name> <traffic_allocation>
 <br>
 
 #### Push experiment to Optimizely X
-Pushes and/or udates an experiment and all variation to your Optimizely project.
+Creates or udates an experiment and all variation to your Optimizely X project. On create, it will assign a default metric "Overall Revenue", because it is required by the API to have a metric.
 ```
 xoptcli push-experiment <path>
 ```
@@ -100,8 +100,18 @@ xoptcli push-experiment <path>
   - Sample Call: `xoptcli push-experiment roboboogie-test/`
 <br>
 
-<!-- darius -->
-On create, will assign a default metric "Overall Revenue", because it is required by the API.
+#### Pull Experiment
+Pulls a specific experiment to a specific file, allowing you to sync your experiment from Optimizely X with your local project folder.
+```
+xoptcli pull-experiment <folder> <experiment_id>
+```
+- Arguments:
+  - `<folder>` - name of folder where you want put the experiment, will write over experiment. Required.
+    - Type: string. Example: "my-great-experiment"
+  - `<experiment_id>` - id of experiment you want pulled.
+    - Type: integer. Example: 11124913096
+  - Sample Call: `xoptcli pull-experiment "my-great-experiment" 11124913096`
+<br>
 
 #### Pull all pages for a project
 Pulls all pages for a project into a single json file. This is mostly for reference.
@@ -129,6 +139,7 @@ xoptcli host [option] <path> [port]
   - `<port>` - the port where you want to host the server. Optional: Default is 8080.
     - Type: integer. Example: 8082
   - Sample Call: `xoptcli host -s roboboogie-test/variation-1/ 8082`
+<br>
 
 ### In Progress:
 
@@ -138,18 +149,6 @@ If you're using a mac and have a bash_profile, you can get access to tab complet
 xoptcli completion >> ~/.bash_profile && source ~/.bash_profile
 ```
 This will add code to your bash_profile to make the commands available and then tell bash to source your newly updated profile. If you are using a mac and don't have a bash_profile, check out [this one](https://github.com/supertopher/dotfiles/blob/master/.bash_profile) that updates your git prompts, letting you know when you need to push code.
-
-#### Pull Experiment
-Pulls a specific experiment to a specific file, allowing you to sync your experiment from Optimizely X with your local project folder.
-```
-xoptcli pull-experiment <folder> <experiment_id>
-```
-- Arguments:
-  - `<folder>` - name of folder where you want put the experiment, will write over experiment. Required.
-    - Type: string. Example: "my-great-experiment"
-  - `<experiment_id>` - id of experiment you want pulled.
-    - Type: integer. Example: 11124913096
-  - Sample Call: `xoptcli pull-experiment "my-great-experiment" 11124913096`
 <br>
 
 <!-- darius -->
