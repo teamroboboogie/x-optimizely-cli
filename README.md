@@ -117,7 +117,7 @@ xoptcli pull-pages [options] <file>
 <br>
 
 #### Host variation locally
-Host a variation locally. Add `xoptcli=activate` as a parameter after you've run the command below and your preferred extension will inject the CSS and JS of the variation you choose. Or point your browser at http(s)://localhost:8080 (default port) for usage info.
+Host a variation locally. Add `xoptcli=activate` as a parameter after you've run the command below and your preferred extension will inject the CSS and JS of the variation you choose. Or point your browser at http(s)://localhost:8080 (default port) for usage info. If you are using the `-s` option, your browser may need you to give it permission to load unsafe scripts before script injection can take place. You can do that by going to http(s)://localhost:8080 and toggeling the advanced section and then clicking the "proceed to unsafe localhost" option.
 ```
 xoptcli host [option] <path> [port]
 ```
@@ -140,7 +140,7 @@ xoptcli completion >> ~/.bash_profile && source ~/.bash_profile
 This will add code to your bash_profile to make the commands available and then tell bash to source your newly updated profile. If you are using a mac and don't have a bash_profile, check out [this one](https://github.com/supertopher/dotfiles/blob/master/.bash_profile) that updates your git prompts, letting you know when you need to push code.
 
 #### Pull Experiment
-Pulls a specific experiment to a specific file, allowing you to sync whats on Optimizely X with your local project folder.
+Pulls a specific experiment to a specific file, allowing you to sync your experiment from Optimizely X with your local project folder.
 ```
 xoptcli pull-experiment <folder> <experiment_id>
 ```
