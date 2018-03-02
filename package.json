@@ -1,6 +1,6 @@
 {
   "name": "@teamroboboogie/x-optimizely-cli",
-  "version": "0.1.3",
+  "version": "0.1.6",
   "description": "A command line application to create/update Optimizely X experiments via the API",
   "main": "index.js",
   "bin": {
