@@ -56,6 +56,7 @@ program
 program
   .command("push-experiment <path>")
   .description("Push an experiment to Optimizely X")
+  .option("-m --metrics", "push with metrics (will overwrite remote metrics)")
   .action(loadCommand("push-experiment"));
 
 program
@@ -71,6 +72,7 @@ program
 program
     .command("pull-experiment <file> <experiment_id>")
     .description("pulls specific experiment to file")
+    .option("-m --metrics", "pull with metrics (syncing with what is present locally)")
     .action(loadCommand("pull-experiment"));
 
 //Show help if no arguments are passed

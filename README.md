@@ -94,6 +94,8 @@ Creates or udates an experiment and all variation to your Optimizely X project. 
 ```
 xoptcli push-experiment <path>
 ```
+- Options:
+  - `-m, --metrics` – push with metrics (will overwrite remote metrics). 
 - Arguments:
   - `<path>` - the path to the directory of the experiment you want to push.
     - Type: directory name as a path. Example: roboboogie-test/
@@ -105,6 +107,8 @@ Pulls a specific experiment to a specific file, allowing you to sync whats on Op
 ```
 xoptcli pull-experiment <folder> <experiment_id>
 ```
+- Options:
+  - `-m, --metrics` – pull with metrics (syncing with local metrics). Unfortunately the experiment api does not return the name of a metric. If it exists locally it will retain the name, but otherwise it may be preferable to search for the event_id within your "pull-pages -m" output.
 - Arguments:
   - `<folder>` - name of folder where you want put the experiment, will write over experiment. Required.
     - Type: string. Example: "my-great-experiment"
