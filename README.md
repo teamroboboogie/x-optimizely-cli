@@ -118,7 +118,7 @@ xoptcli pull-experiment <folder> <experiment_id>
 <br>
 
 #### Pull all pages for a project
-Pulls all pages for a project into a single json file. This is mostly for reference.
+Pulls all pages for a project into a single json file with the option for metrics attached to those pages. This is mostly for reference.
 ```
 xoptcli pull-pages [options] <file>
 ```
