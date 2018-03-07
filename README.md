@@ -90,7 +90,7 @@ xoptcli variation <experiment> <folder> <name> <traffic_allocation>
 <br>
 
 #### Push experiment to Optimizely X
-Creates or udates an experiment and all variation to your Optimizely X project. On create, it will assign a default metric "Overall Revenue", because it is required by the API to have a metric.
+Creates or udates an experiment and all variation to your Optimizely X project. On create, it will assign a default metric "Overall Revenue", because it is required by the API to have a metric. With the `-m` option you can push metrics with experiments. This is really helpful for adding groups of metrics at once, like checkout funnel metrics.
 ```
 xoptcli push-experiment <path>
 ```
@@ -103,7 +103,7 @@ xoptcli push-experiment <path>
 <br>
 
 #### Pull Experiment
-Pulls a specific experiment to a specific file, allowing you to sync whats on Optimizely X with your local project folder. As of right now we do not support multiple versions of code for different pages in the same experiment (it's even confusing to type that out!).
+Pulls a specific experiment to a specific file, allowing you to sync whats on Optimizely X with your local project folder. As of right now we do not support multiple versions of code for different pages in the same experiment (it's even confusing to type that out!). We do support pulling metrics though!
 ```
 xoptcli pull-experiment <folder> <experiment_id>
 ```
