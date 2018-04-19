@@ -1,6 +1,6 @@
 {
   "name": "@teamroboboogie/x-optimizely-cli",
-  "version": "0.1.7",
+  "version": "0.1.8",
   "description": "A command line application to create/update Optimizely X experiments via the API",
   "main": "index.js",
   "bin": {
@@ -50,5 +50,5 @@
   "scripts": {
     "test": "xoptcli"
   },
-  "homepage": "https://bitbucket.org/DariusCapizzi/x-optimizely-cli#readme"
+  "homepage": "http://teamroboboogie.com/xoptcli"
 }

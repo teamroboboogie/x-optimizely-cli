@@ -95,7 +95,7 @@ Creates or udates an experiment and all variation to your Optimizely X project. 
 xoptcli push-experiment <path>
 ```
 - Options:
-  - `-m, --metrics` – push with metrics (will overwrite remote metrics). 
+  - `-m, --metrics` – push with metrics (will overwrite remote metrics).
 - Arguments:
   - `<path>` - the path to the directory of the experiment you want to push.
     - Type: directory name as a path. Example: roboboogie-test/
@@ -184,5 +184,5 @@ stylesheet.href = '//localhost:8080/variation.css';
 document.head.appendChild(stylesheet);
 ```
 
-Copyright and license
+#### Copyright and license
 Code copyright 2018 roboboogie. Released under the Apache 2.0 License.
